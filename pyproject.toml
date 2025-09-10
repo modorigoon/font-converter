@@ -1,0 +1,35 @@
+[project]
+name = "font-converter"
+version = "0.1.0"
+description = "무더기 폰트 포맷 변경하기 귀찮아서 맹근 스크립트"
+authors = [
+    {name = "modorigoon"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "fonttools>=4.0.0",
+    "brotli>=1.0.0",
+    "cu2qu>=1.6.0"
+]
+classifiers = [
+    "Development Status :: Beta",
+    "Intended Audience :: modorigoon",
+    "License :: None",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+
+[project.scripts]
+fc = "fc:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["fc"]
